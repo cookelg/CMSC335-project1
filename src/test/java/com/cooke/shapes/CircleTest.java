@@ -18,7 +18,7 @@ public class CircleTest {
 
         assertEquals("The radius must be a positive number", exception1.getMessage());
 
-        System.out.println("PASS: calculateArea() catches negative number argument");
+        System.out.println("PASS: Circle.calculateArea() catches negative number argument");
 
         IllegalArgumentException exception2 = assertThrows(IllegalArgumentException.class, () -> {
             new Circle(-1);
@@ -26,7 +26,7 @@ public class CircleTest {
 
         assertEquals("The radius must be a positive number", exception2.getMessage());
 
-        System.out.println("PASS: negative number caught in constructor");
+        System.out.println("PASS: negative number caught in Circle constructor");
     }
 
     @Test
@@ -35,8 +35,8 @@ public class CircleTest {
         Circle circle = new Circle(1);
 
         assertEquals(circle.getNumberOfDimensions(), 2);
-        System.out.println("PASS: Dimensions correct");
+        System.out.println("PASS: Circle Dimensions correct");
         assertEquals(circle.getArea(), Math.PI);
-        System.out.println("PASS: Area correct");
+        System.out.println("PASS: Circle Area correct");
     }
 }
