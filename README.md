@@ -67,8 +67,13 @@ This project used Claude Code (Anthropic's AI coding assistant, model Claude Opu
 
 - **Created the README skeleton.** This includes the section layout and the compile, run, and test commands. The AI checked the commands against the starter code.
 - **Created `CLAUDE.md`.** This is a configuration file that gives the AI assistant context about the project. It is not part of the program.
+- **Answered Maven build questions.** The AI confirmed that `.gitignore` doesn't block a fresh clone from building, and explained when `pom.xml` needs a main class.
+- **Reviewed `Circle.java` without changing it.** The AI confirmed that an `IllegalArgumentException` thrown from the constructor can be caught by the caller. It also pointed out edge cases: NaN radius values, `setRadius` changing the radius before validating it, and closing the `Scanner` on `System.in`.
+- **Explained how `Scanner` handles input.** The AI explained how `nextDouble()` behaves when input isn't a number, why bad input has to be discarded, and the difference between Ctrl+C and Ctrl+D (end of input). It ran a small test program outside the project to show this.
+- **Suggested a design for input validation.** The AI suggested one shared helper method for reading positive numbers instead of a loop in each shape class. It also suggested sharing a single `Scanner` and catching only `InputMismatchException` in the retry loop. I wrote the `readPositiveDouble` helper in `App.java` myself.
+- **Helped debug a compiler error.** The AI explained the "variable might not have been initialized" error in `readPositiveDouble`. It suggested a three-line fix for the catch block (discard the bad input, then `continue`), and I applied the fix myself.
 
-As of this writing, the AI has not written any of the Java source code, the class design, or the test cases.
+The AI has not edited any Java source files. I wrote the class design, the Java code, and the tests.
 
 <!-- TODO: Keep this section up to date. If you use AI for anything else later (code review,
      debugging help, explanations, test ideas, documentation), add it here, and say which
