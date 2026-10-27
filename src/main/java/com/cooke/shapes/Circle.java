@@ -20,6 +20,11 @@ public class Circle extends TwoDimensionalShape {
         this.radius = radius;
     }
 
+    @Override
+    public String toString() {
+        return "The area of the Circle is " + this.getArea();
+    }
+
     public static double calculateArea(double radius) {
         if (radius <= 0)
             throw new IllegalArgumentException("The radius must be a positive number");

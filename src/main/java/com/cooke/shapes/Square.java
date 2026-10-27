@@ -20,6 +20,11 @@ public class Square extends TwoDimensionalShape {
         this.length = length;
     }
 
+    @Override
+    public String toString() {
+        return "The area of the Square is " + this.getArea();
+    }
+
     public static double calculateArea(double length) {
         if (length <= 0)
             throw new IllegalArgumentException("The length must be a positive number");

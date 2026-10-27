@@ -25,6 +25,11 @@ public class Rectangle extends TwoDimensionalShape {
         this.length = length;
     }
 
+    @Override
+    public String toString() {
+        return "The area of the Rectangle is " + this.getArea();
+    }
+
     public static double calculateArea(double length, double width) {
         if (length <= 0 || width <= 0)
             throw new IllegalArgumentException("Both inputs must be a positive number");
