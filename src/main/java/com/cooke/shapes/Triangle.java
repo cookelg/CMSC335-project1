@@ -220,6 +220,28 @@ public class Triangle extends TwoDimensionalShape {
             return TriangleType.OBTUSE;
 
     }
+
+    /**
+     * Static main method for Triangle class
+     *
+     * Create 3 triangles to test the method outputs.
+     *
+     * Expected results:
+     * "The Right-Triangle has an area of 6.0"
+     * "The Acute-Triangle has an area of 4.47"
+     * "The Obtuse-Triangle has an area of 12.0"
+     *
+     */
+    public static void main(String[] args) {
+        Triangle tri1 = new Triangle(3, 4, 5);
+        Triangle tri2 = new Triangle(3, 3, 4);
+        Triangle tri3 = new Triangle(5, 5, 8);
+
+        System.out.println(tri1.toString());
+        System.out.println(tri2.toString());
+        System.out.println(tri3.toString());
+
+    }
 }
 
 /**

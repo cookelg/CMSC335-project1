@@ -78,4 +78,26 @@ public class Circle extends TwoDimensionalShape {
         return new Circle(radius);
     }
 
+    /**
+     * Static main method for Circle class
+     *
+     * Create 3 circles to test the method outputs.
+     *
+     * Expected results:
+     * "The Circle has an area of 3.14"
+     * "The Circle has an area of 12.57"
+     * "The Circle has an area of 28.27"
+     *
+     */
+    public static void main(String[] args) {
+        Circle cir1 = new Circle(1);
+        Circle cir2 = new Circle(2);
+        Circle cir3 = new Circle(3);
+
+        System.out.println(cir1.toString());
+        System.out.println(cir2.toString());
+        System.out.println(cir3.toString());
+
+    }
+
 }

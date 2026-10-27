@@ -106,4 +106,26 @@ public class Cone extends ThreeDimensionalShape {
         return new Cone(radius, height);
     }
 
+    /**
+     * Static main method for Cone class
+     *
+     * Create 3 cones to test the method outputs.
+     *
+     * Expected results:
+     * "The Cone has a volume of 1.05"
+     * "The Cone has a volume of 12.57"
+     * "The Cone has a volume of 94.25"
+     *
+     */
+    public static void main(String[] args) {
+        Cone co1 = new Cone(1, 1);
+        Cone co2 = new Cone(2, 3);
+        Cone co3 = new Cone(3, 10);
+
+        System.out.println(co1.toString());
+        System.out.println(co2.toString());
+        System.out.println(co3.toString());
+
+    }
+
 }

@@ -77,4 +77,26 @@ public class Square extends TwoDimensionalShape {
         return new Square(length);
     }
 
+    /**
+     * Static main method for Square class
+     *
+     * Create 3 squares to test the method outputs.
+     *
+     * Expected results:
+     * "The Square has an area of 1"
+     * "The Square has an area of 4"
+     * "The Square has an area of 9"
+     *
+     */
+    public static void main(String[] args) {
+        Square sq1 = new Square(1);
+        Square sq2 = new Square(2);
+        Square sq3 = new Square(3);
+
+        System.out.println(sq1.toString());
+        System.out.println(sq2.toString());
+        System.out.println(sq3.toString());
+
+    }
+
 }

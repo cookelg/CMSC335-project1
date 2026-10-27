@@ -78,4 +78,26 @@ public class Cube extends ThreeDimensionalShape {
         return new Cube(length);
     }
 
+    /**
+     * Static main method for Cube class
+     *
+     * Create 3 cubes to test the method outputs.
+     *
+     * Expected results:
+     * "The Cube has a volume of 1"
+     * "The Cube has a volume of 8"
+     * "The Cube has a volume of 27"
+     *
+     */
+    public static void main(String[] args) {
+        Cube cu1 = new Cube(1);
+        Cube cu2 = new Cube(2);
+        Cube cu3 = new Cube(3);
+
+        System.out.println(cu1.toString());
+        System.out.println(cu2.toString());
+        System.out.println(cu3.toString());
+
+    }
+
 }

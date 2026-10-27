@@ -106,4 +106,24 @@ public class Torus extends ThreeDimensionalShape {
         return new Torus(majorRadius, minorRadius);
     }
 
+    /**
+     * Static main method for Torus class
+     *
+     * Create 3 torus to test the method outputs.
+     *
+     * Expected results:
+     * "The Torus has a volume of 39.48"
+     * "The Torus has a volume of 236.87"
+     * "The Torus has a volume of 1776.53"
+     *
+     */
+    public static void main(String[] args) {
+        Torus to1 = new Torus(2, 1);
+        Torus to2 = new Torus(3, 2);
+        Torus to3 = new Torus(10, 3);
+
+        System.out.println(to1.toString());
+        System.out.println(to2.toString());
+        System.out.println(to3.toString());
+    }
 }

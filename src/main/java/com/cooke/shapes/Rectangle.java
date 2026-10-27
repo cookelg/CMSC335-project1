@@ -108,4 +108,26 @@ public class Rectangle extends TwoDimensionalShape {
         return new Rectangle(length, width);
     }
 
+    /**
+     * Static main method for Rectangle class
+     *
+     * Create 3 rectangles to test the method outputs.
+     *
+     * Expected results:
+     * "The Rectangle has an area of 2"
+     * "The Rectangle has an area of 8"
+     * "The Rectangle has an area of 32"
+     *
+     */
+    public static void main(String[] args) {
+        Rectangle rec1 = new Rectangle(1, 2);
+        Rectangle rec2 = new Rectangle(2, 4);
+        Rectangle rec3 = new Rectangle(4, 8);
+
+        System.out.println(rec1.toString());
+        System.out.println(rec2.toString());
+        System.out.println(rec3.toString());
+
+    }
+
 }

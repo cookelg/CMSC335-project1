@@ -79,4 +79,26 @@ public class Sphere extends ThreeDimensionalShape {
         return new Sphere(radius);
     }
 
+    /**
+     * Static main method for Sphere class
+     *
+     * Create 3 spheres to test the method outputs.
+     *
+     * Expected results:
+     * "The Sphere has a volume of 4.19"
+     * "The Sphere has a volume of 33.51"
+     * "The Sphere has a volume of 113.1"
+     *
+     */
+    public static void main(String[] args) {
+        Sphere sph1 = new Sphere(1);
+        Sphere sph2 = new Sphere(2);
+        Sphere sph3 = new Sphere(3);
+
+        System.out.println(sph1.toString());
+        System.out.println(sph2.toString());
+        System.out.println(sph3.toString());
+
+    }
+
 }

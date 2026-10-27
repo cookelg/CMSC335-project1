@@ -106,4 +106,26 @@ public class Cylinder extends ThreeDimensionalShape {
         return new Cylinder(radius, height);
     }
 
+    /**
+     * Static main method for Cylinder class
+     *
+     * Create 3 cylinders to test the method outputs.
+     *
+     * Expected results:
+     * "The Cylinder has a volume of 3.14"
+     * "The Cylinder has a volume of 37.7"
+     * "The Cylinder has a volume of 282.74"
+     *
+     */
+    public static void main(String[] args) {
+        Cylinder cy1 = new Cylinder(1, 1);
+        Cylinder cy2 = new Cylinder(2, 3);
+        Cylinder cy3 = new Cylinder(3, 10);
+
+        System.out.println(cy1.toString());
+        System.out.println(cy2.toString());
+        System.out.println(cy3.toString());
+
+    }
+
 }
