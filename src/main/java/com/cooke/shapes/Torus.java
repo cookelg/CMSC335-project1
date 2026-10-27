@@ -7,7 +7,7 @@ public class Torus extends ThreeDimensionalShape {
     private double minorRadius;
 
     public Torus(double majorRadius, double minorRadius) {
-        super(Torus.calculateVolume(majorRadius, minorRadius));
+        super(Torus.calculateVolume(majorRadius, minorRadius), "Torus");
         this.majorRadius = majorRadius;
         this.minorRadius = minorRadius;
     }
@@ -28,11 +28,6 @@ public class Torus extends ThreeDimensionalShape {
     public void getMinorRadius(double minorRadius) {
         this.setVolume(Torus.calculateVolume(this.majorRadius, minorRadius));
         this.minorRadius = minorRadius;
-    }
-
-    @Override
-    public String toString() {
-        return "The volume of the Torus is " + this.getVolume();
     }
 
     public static double calculateVolume(double majorRadius, double minorRadius) {

@@ -7,7 +7,7 @@ public class Circle extends TwoDimensionalShape {
     private double radius;
 
     public Circle(double radius) {
-        super(Circle.calculateArea(radius));
+        super(Circle.calculateArea(radius), "Circle");
         this.radius = radius;
     }
 
@@ -18,11 +18,6 @@ public class Circle extends TwoDimensionalShape {
     public void setRadius(double radius) {
         this.setArea(Circle.calculateArea(radius));
         this.radius = radius;
-    }
-
-    @Override
-    public String toString() {
-        return "The area of the Circle is " + this.getArea();
     }
 
     public static double calculateArea(double radius) {

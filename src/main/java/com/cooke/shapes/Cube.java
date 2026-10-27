@@ -6,7 +6,7 @@ public class Cube extends ThreeDimensionalShape {
     private double length;
 
     public Cube(double length) {
-        super(Cube.calculateVolume(length));
+        super(Cube.calculateVolume(length), "Cube");
         this.length = length;
     }
 
@@ -17,11 +17,6 @@ public class Cube extends ThreeDimensionalShape {
     public void setLength(double length) {
         this.setVolume(Cube.calculateVolume(length));
         this.length = length;
-    }
-
-    @Override
-    public String toString() {
-        return "The volume of the Cube is " + this.getVolume();
     }
 
     public static double calculateVolume(double length) {

@@ -7,7 +7,7 @@ public class Cylinder extends ThreeDimensionalShape {
     private double height;
 
     public Cylinder(double radius, double height) {
-        super(Cylinder.calculateVolume(radius, height));
+        super(Cylinder.calculateVolume(radius, height), "Cylinder");
         this.radius = radius;
         this.height = height;
     }
@@ -28,11 +28,6 @@ public class Cylinder extends ThreeDimensionalShape {
     public void setHeight(double height) {
         this.setVolume(Cylinder.calculateVolume(this.radius, height));
         this.height = height;
-    }
-
-    @Override
-    public String toString() {
-        return "The volume of the Cylinder is " + this.getVolume();
     }
 
     public static double calculateVolume(double radius, double height) {

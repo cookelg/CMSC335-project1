@@ -7,7 +7,7 @@ public class Rectangle extends TwoDimensionalShape {
     private double width;
 
     public Rectangle(double length, double width) {
-        super(Rectangle.calculateArea(length, width));
+        super(Rectangle.calculateArea(length, width), "Rectangle");
         this.length = length;
         this.width = width;
     }
@@ -23,11 +23,6 @@ public class Rectangle extends TwoDimensionalShape {
     public void setLength(double length) {
         this.setArea(Rectangle.calculateArea(length, this.width));
         this.length = length;
-    }
-
-    @Override
-    public String toString() {
-        return "The area of the Rectangle is " + this.getArea();
     }
 
     public static double calculateArea(double length, double width) {

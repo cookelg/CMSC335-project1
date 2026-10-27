@@ -7,7 +7,7 @@ public class Sphere extends ThreeDimensionalShape {
     private double radius;
 
     public Sphere(double radius) {
-        super(Sphere.calculateVolume(radius));
+        super(Sphere.calculateVolume(radius), "Sphere");
         this.radius = radius;
     }
 
@@ -18,11 +18,6 @@ public class Sphere extends ThreeDimensionalShape {
     public void setRadius(double radius) {
         this.setVolume(Sphere.calculateVolume(radius));
         this.radius = radius;
-    }
-
-    @Override
-    public String toString() {
-        return "The volume of the Sphere is " + this.getVolume();
     }
 
     public static double calculateVolume(double radius) {

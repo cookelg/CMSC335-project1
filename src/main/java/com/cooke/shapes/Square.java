@@ -7,7 +7,7 @@ public class Square extends TwoDimensionalShape {
     private double length;
 
     public Square(double length) {
-        super(Square.calculateArea(length));
+        super(Square.calculateArea(length), "Square");
         this.length = length;
     }
 
@@ -18,11 +18,6 @@ public class Square extends TwoDimensionalShape {
     public void setLength(double length) {
         this.setArea(Square.calculateArea(length));
         this.length = length;
-    }
-
-    @Override
-    public String toString() {
-        return "The area of the Square is " + this.getArea();
     }
 
     public static double calculateArea(double length) {
