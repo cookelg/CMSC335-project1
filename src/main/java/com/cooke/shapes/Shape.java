@@ -8,7 +8,6 @@
  *
  * @author Lawrence Cooke
  */
-
 package com.cooke.shapes;
 
 public abstract class Shape {

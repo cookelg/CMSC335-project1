@@ -1,7 +1,7 @@
 /**
- * Triangle Class and TriangleType enum class.
+ * Triangle Class and TriangleType enum class
  *
- * Creates a Triangle object with three sides of adjustable lentgth. The triangle 
+ * Creates a Triangle object with three sides of adjustable lentgth; The triangle 
  * area and triangle type is calculate when a new triangle is created and when any 
  * side is adjusted. 
  *
@@ -41,11 +41,10 @@ public class Triangle extends TwoDimensionalShape {
      * @param side3:double the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public Triangle(double side1, double side2, double side3) {
-        // Calculate volume with static method, and custom name depending on triangle
-        // type before sending to superclass constructor.
+        // Calculate area with static method before sending to superclass constructor.
         super(
                 Triangle.calculateArea(side1, side2, side3),
                 Triangle.getTriangleType(side1, side2, side3).getTriangleType()
@@ -91,7 +90,7 @@ public class Triangle extends TwoDimensionalShape {
      *
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public void setSide1(double side1) {
         this.setArea(Triangle.calculateArea(side1, this.side2, this.side3));
@@ -106,7 +105,7 @@ public class Triangle extends TwoDimensionalShape {
      *
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public void setSide2(double side2) {
         this.setArea(Triangle.calculateArea(this.side1, side2, this.side3));
@@ -121,7 +120,7 @@ public class Triangle extends TwoDimensionalShape {
      *
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public void setSide3(double side3) {
         this.setArea(Triangle.calculateArea(this.side1, this.side2, side3));
@@ -147,7 +146,7 @@ public class Triangle extends TwoDimensionalShape {
      * @param side3:double the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public static double calculateArea(double side1, double side2, double side3) {
         // check for any negative arguments
@@ -177,10 +176,11 @@ public class Triangle extends TwoDimensionalShape {
     /**
      * Static Method to create a new Triangle from an input Scanner
      *
-     * This method will check the users inputs for errors and re-prompt until a
-     * valid input is parsed.
+     * This method will prompt the user for inputs, check the users inputs for
+     * errors,
+     * and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner the length of the first side
+     * @param input:java.utils.Scanner The input scanner object
      * @return a new Triangle Object
      */
     public static Triangle fromUserInput(Scanner input) {
@@ -198,7 +198,7 @@ public class Triangle extends TwoDimensionalShape {
      * @param side3:double the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
-     *                                  <= 0.
+     *                                  less than or equal to 0.
      */
     public static TriangleType getTriangleType(double side1, double side2, double side3) {
         // calculate area method only used to catch invalid arguments
@@ -222,17 +222,39 @@ public class Triangle extends TwoDimensionalShape {
     }
 }
 
+/**
+ * TriangleType enum
+ *
+ * Three enums correspond to Right, Obtuse, and Acute Triangles
+ */
 enum TriangleType {
+    // RIGHT enum will pass the String "Right" to the constructor
     RIGHT("Right"),
+    // OBTUSE enum will pass the String "Obtuse" to the constructor
     OBTUSE("Obtuse"),
+    // ACUTE enum will pass the String "Right" to the constructor
     ACUTE("Acute");
 
+    /**
+     * String enum member variable to contain the String representation of the enum
+     */
     private final String triangleType;
 
+    /**
+     * Constructor for a TriangleType enum
+     *
+     * The constructors RIGHT, OBTUSE, and ACUTE will initialize a new TriangleType
+     * enum with the appropriate String representation.
+     */
     private TriangleType(String triangleType) {
         this.triangleType = triangleType;
     }
 
+    /**
+     * Returns a String representation of the TriangleType.
+     *
+     * @return String representation of the Triangle type.
+     */
     public String getTriangleType() {
         return this.triangleType;
     }
