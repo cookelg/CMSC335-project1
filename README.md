@@ -95,6 +95,9 @@ General Rules for inputs:
 
 Lawrence Cooke
 
+## Lessons learned
+The concept that I wanted to really flex during this assignment was using constructors properly. One of the features that I wanted to implement was to have the program check for valid constructor arguments and throw an exception if one is supplied. I was able to overcome this by implementing a static method to calculate volume/area and throw an exception when an invalid argument is passed to it. I passed the output of that static method to the superclass constructor, enabling an exception to be thrown before an invalid shape can be constructed. I also used this project to learn about Java enum classes; I chose to use these as member variables for triangle types (right, obtuse, acute).  
+
 ## AI Use Disclosure
 
 This project used two of Anthropic's AI tools in the limited ways listed below: Claude Code, the command-line coding assistant, and the Claude chatbot in a web browser.
