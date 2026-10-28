@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Torus Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Torus extends ThreeDimensionalShape {
     /**
      * the major radius of the torus
@@ -26,8 +26,8 @@ public class Torus extends ThreeDimensionalShape {
     /**
      * Torus Constructor
      *
-     * @param majorRadius:double the major radius of the torus
-     * @param minorRadius:double the minor radius of the torus
+     * @param majorRadius the major radius of the torus
+     * @param minorRadius the minor radius of the torus
      * @throws IllegalArgumentException if any argument is less than or equal to 0.
      */
     public Torus(double majorRadius, double minorRadius) {
@@ -58,7 +58,7 @@ public class Torus extends ThreeDimensionalShape {
     /**
      * sets the major radius of the cylinder, recalculates this.volume
      *
-     * @param majorRadius:double the major radius of the new cylinder
+     * @param majorRadius the major radius of the new cylinder
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setMajorRadius(double majorRadius) {
@@ -69,7 +69,7 @@ public class Torus extends ThreeDimensionalShape {
     /**
      * sets the minor radius of the cylinder, recalculates this.volume
      *
-     * @param minorRadius:double the minor radius of the new cylinder
+     * @param minorRadius the minor radius of the new cylinder
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setMinorRadius(double minorRadius) {
@@ -80,8 +80,8 @@ public class Torus extends ThreeDimensionalShape {
     /**
      * Static Method calculate the volume of any torus
      *
-     * @param majorRadius:double the major radius of the torus
-     * @param minorRadius:double the minor radius of the torus
+     * @param majorRadius the major radius of the torus
+     * @param minorRadius the minor radius of the torus
      * @throws IllegalArgumentException if any argument is less than or equal to 0.
      */
     public static double calculateVolume(double majorRadius, double minorRadius) {
@@ -97,7 +97,7 @@ public class Torus extends ThreeDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Torus Object
      */
     public static Torus fromUserInput(Scanner input) {

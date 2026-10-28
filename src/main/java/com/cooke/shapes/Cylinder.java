@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Cylinder Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Cylinder extends ThreeDimensionalShape {
     /**
      * the radius of the cylinder
@@ -26,8 +26,8 @@ public class Cylinder extends ThreeDimensionalShape {
     /**
      * Cylinder Constructor
      *
-     * @param radius:double the radius of the cylinder
-     * @param height:double the height of the cylinder
+     * @param radius the radius of the cylinder
+     * @param height the height of the cylinder
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Cylinder(double radius, double height) {
@@ -58,7 +58,7 @@ public class Cylinder extends ThreeDimensionalShape {
     /**
      * sets the radius of the cylinder, recalculates this.volume
      *
-     * @param radius:double the radius of the new cylinder
+     * @param radius the radius of the new cylinder
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setRadius(double radius) {
@@ -69,7 +69,7 @@ public class Cylinder extends ThreeDimensionalShape {
     /**
      * sets the height of the cylinder, recalculates this.volume
      *
-     * @param height:double the height of the new cylinder
+     * @param height the height of the new cylinder
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setHeight(double height) {
@@ -80,8 +80,8 @@ public class Cylinder extends ThreeDimensionalShape {
     /**
      * Static Method calculate the volume of any cylinder
      *
-     * @param radius:double the radius of the cylinder
-     * @param height:double the height of the cylinder
+     * @param radius the radius of the cylinder
+     * @param height the height of the cylinder
      * @throws IllegalArgumentException if any argument is less than or equal to 0.
      */
     public static double calculateVolume(double radius, double height) {
@@ -97,7 +97,7 @@ public class Cylinder extends ThreeDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Cylinder Object
      */
     public static Cylinder fromUserInput(Scanner input) {

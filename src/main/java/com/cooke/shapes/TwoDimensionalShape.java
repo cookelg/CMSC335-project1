@@ -1,3 +1,5 @@
+package com.cooke.shapes;
+
 /**
  * Abstract TwoDimensionalShape Class
  *
@@ -8,8 +10,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
 public abstract class TwoDimensionalShape extends Shape {
     /**
      * Contains the area of the two-dimensional shape
@@ -19,8 +19,8 @@ public abstract class TwoDimensionalShape extends Shape {
     /**
      * 2D Shape Constructor
      *
-     * @param area:double the area of the shape
-     * @param name:String the name descriptor of the shape (e.g. square)
+     * @param area the area of the shape
+     * @param name the name descriptor of the shape (e.g. square)
      */
     public TwoDimensionalShape(double area, String name) {
         // 2 will be initialized into this.numberOfDimensions and "area" into
@@ -41,7 +41,7 @@ public abstract class TwoDimensionalShape extends Shape {
     /**
      * Sets the 2d shape's area
      *
-     * @param area:double The new area of the 2D shape
+     * @param area The new area of the 2D shape
      */
     protected void setArea(double area) {
         this.area = area;

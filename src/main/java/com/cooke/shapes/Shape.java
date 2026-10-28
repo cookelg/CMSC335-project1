@@ -1,3 +1,5 @@
+package com.cooke.shapes;
+
 /**
  * Abstract Shape Class
  *
@@ -8,8 +10,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
 public abstract class Shape {
     /**
      * The number of dimensions, will either be 2D or 3D.
@@ -28,10 +28,10 @@ public abstract class Shape {
     /**
      * Shape Constructor
      *
-     * @param numberOfDimensions:int specifies if shape is 2D or 3D.
-     * @param name:String            the name descriptor of the shape (e.g. square)
-     * @param metric:String          the metric for measuring the space of a shape
-     *                               (e.g. area)
+     * @param numberOfDimensions specifies if shape is 2D or 3D.
+     * @param name               the name descriptor of the shape (e.g. square)
+     * @param metric             the metric for measuring the space of a shape
+     *                           (e.g. area)
      */
     public Shape(int numberOfDimensions, String name, String metric) {
         this.numberOfDimensions = numberOfDimensions;

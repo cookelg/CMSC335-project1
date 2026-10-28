@@ -1,3 +1,10 @@
+package com.cooke.shapes;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /**
  * Main loop Class 
  *
@@ -12,16 +19,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-/**
- * Hello world!
- */
 public class App {
     /**
      * Static Method that reads a positive double from a scanner
@@ -29,9 +26,9 @@ public class App {
      * The user will be prompted with the String argument; the method will loop
      * until the user supplies a number that is greater than 0.
      *
-     * @param input:java.utils.Scanner The input scanner object
-     * @param prompt:String            The prompt to be shown to the user on
-     *                                 System.out
+     * @param input  The input scanner object
+     * @param prompt The prompt to be shown to the user on
+     *               System.out
      * @return a positive double
      */
     public static double readPositiveDouble(Scanner input, String prompt) {
@@ -60,9 +57,9 @@ public class App {
      * The user will be prompted with the String argument; the method will loop
      * until the user supplies a number that is greater than 0.
      *
-     * @param input:java.utils.Scanner The input scanner object
-     * @param prompt:String            The prompt to be shown to the user on
-     *                                 System.out
+     * @param input  The input scanner object
+     * @param prompt The prompt to be shown to the user on
+     *               System.out
      * @return a positive integer
      */
     public static int readPositiveInt(Scanner input, String prompt) {
@@ -91,9 +88,9 @@ public class App {
      * The user will be prompted with the String argument; the method will loop
      * until the user supplies a 'y' or 'n' character; not case sensitive.
      *
-     * @param input:java.utils.Scanner The input scanner object
-     * @param prompt:String            The prompt to be shown to the user on
-     *                                 System.out
+     * @param input  The input scanner object
+     * @param prompt The prompt to be shown to the user on
+     *               System.out
      * @return 'y' | 'Y' | 'n' | 'N'
      */
     public static char readYorN(Scanner input, String prompt) {

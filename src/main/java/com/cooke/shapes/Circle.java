@@ -1,3 +1,8 @@
+package com.cooke.shapes;
+
+import java.lang.Math;
+import java.util.Scanner;
+
 /**
  * Circle Class 
  *
@@ -9,11 +14,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.lang.Math;
-import java.util.Scanner;
-
 public class Circle extends TwoDimensionalShape {
     /**
      * the radius of the circle
@@ -23,7 +23,7 @@ public class Circle extends TwoDimensionalShape {
     /**
      * Circle Constructor
      *
-     * @param radius:double the radius of the circle
+     * @param radius the radius of the circle
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Circle(double radius) {
@@ -54,7 +54,7 @@ public class Circle extends TwoDimensionalShape {
     /**
      * Static Method calculate the area of any circle
      *
-     * @param radius:double the radius of the circle
+     * @param radius the radius of the circle
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public static double calculateArea(double radius) {
@@ -70,7 +70,7 @@ public class Circle extends TwoDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Sphere Object
      */
     public static Circle fromUserInput(Scanner input) {

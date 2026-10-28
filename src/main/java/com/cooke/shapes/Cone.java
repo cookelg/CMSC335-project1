@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Cone Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Cone extends ThreeDimensionalShape {
     /**
      * the radius of the cone
@@ -26,8 +26,8 @@ public class Cone extends ThreeDimensionalShape {
     /**
      * Cone Constructor
      *
-     * @param radius:double the radius of the cone
-     * @param height:double the height of the cone
+     * @param radius the radius of the cone
+     * @param height the height of the cone
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Cone(double radius, double height) {
@@ -58,7 +58,7 @@ public class Cone extends ThreeDimensionalShape {
     /**
      * sets the radius of the cone, recalculates this.volume
      *
-     * @param radius:double the radius of the new cone
+     * @param radius the radius of the new cone
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setRadius(double radius) {
@@ -69,7 +69,7 @@ public class Cone extends ThreeDimensionalShape {
     /**
      * sets the height of the cone, recalculates this.volume
      *
-     * @param radius:double the height of the new cone
+     * @param height the height of the new cone
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setHeight(double height) {
@@ -80,8 +80,8 @@ public class Cone extends ThreeDimensionalShape {
     /**
      * Static Method calculate the volume of any cone
      *
-     * @param radius:double the radius of the cone
-     * @param height:double the height of the cone
+     * @param radius the radius of the cone
+     * @param height the height of the cone
      * @throws IllegalArgumentException if any argument is less than or equal to 0.
      */
     public static double calculateVolume(double radius, double height) {
@@ -97,7 +97,7 @@ public class Cone extends ThreeDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Cone Object
      */
     public static Cone fromUserInput(Scanner input) {

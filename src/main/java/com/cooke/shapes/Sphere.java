@@ -1,3 +1,8 @@
+package com.cooke.shapes;
+
+import java.lang.Math;
+import java.util.Scanner;
+
 /**
  * Sphere Class 
  *
@@ -9,11 +14,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.lang.Math;
-import java.util.Scanner;
-
 public class Sphere extends ThreeDimensionalShape {
     /**
      * the radius of the sphere
@@ -23,7 +23,7 @@ public class Sphere extends ThreeDimensionalShape {
     /**
      * Sphere Constructor
      *
-     * @param radius:double the radius of the sphere
+     * @param radius the radius of the sphere
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Sphere(double radius) {
@@ -44,7 +44,7 @@ public class Sphere extends ThreeDimensionalShape {
     /**
      * sets the radius of the sphere, recalculates this.volume
      *
-     * @param radius:double the radius of the sphere
+     * @param radius the radius of the sphere
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setRadius(double radius) {
@@ -55,7 +55,7 @@ public class Sphere extends ThreeDimensionalShape {
     /**
      * Static Method calculate the volume of any sphere
      *
-     * @param radius:double the radius of the sphere
+     * @param radius the radius of the sphere
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public static double calculateVolume(double radius) {
@@ -71,7 +71,7 @@ public class Sphere extends ThreeDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Sphere Object
      */
     public static Sphere fromUserInput(Scanner input) {

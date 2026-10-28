@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Cube Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Cube extends ThreeDimensionalShape {
     /**
      * the length of all sides of the cube
@@ -22,7 +22,7 @@ public class Cube extends ThreeDimensionalShape {
     /**
      * Cube Constructor
      *
-     * @param length:double the length of the Cube
+     * @param length the length of the Cube
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Cube(double length) {
@@ -43,7 +43,7 @@ public class Cube extends ThreeDimensionalShape {
     /**
      * sets the length of the cube, recalculates this.volume
      *
-     * @param length:double the length of the cube
+     * @param length the length of the cube
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public void setLength(double length) {
@@ -54,7 +54,7 @@ public class Cube extends ThreeDimensionalShape {
     /**
      * Static Method calculate the volume of any Cube
      *
-     * @param length:double the length of the cube
+     * @param length the length of the cube
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public static double calculateVolume(double length) {
@@ -70,7 +70,7 @@ public class Cube extends ThreeDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Cube Object
      */
     public static Cube fromUserInput(Scanner input) {

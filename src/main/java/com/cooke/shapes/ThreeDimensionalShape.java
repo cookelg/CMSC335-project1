@@ -1,3 +1,5 @@
+package com.cooke.shapes;
+
 /**
  * Abstract ThreeDimensionalShape Class
  *
@@ -8,8 +10,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
 public abstract class ThreeDimensionalShape extends Shape {
     /**
      * Contains the volume of the three-dimensional shape
@@ -19,8 +19,8 @@ public abstract class ThreeDimensionalShape extends Shape {
     /**
      * 3D Shape Constructor
      *
-     * @param volume:double the area of the shape
-     * @param name:String   the name descriptor of the shape (e.g. cube)
+     * @param volume the area of the shape
+     * @param name   the name descriptor of the shape (e.g. cube)
      */
     public ThreeDimensionalShape(double volume, String name) {
         // 3 will be initialized into this.numberOfDimensions and "volume" into
@@ -41,7 +41,7 @@ public abstract class ThreeDimensionalShape extends Shape {
     /**
      * Sets the 3d shape's volume
      *
-     * @param volume:double The new area of the 3D shape
+     * @param volume The new area of the 3D shape
      */
     protected void setVolume(double volume) {
         this.volume = volume;

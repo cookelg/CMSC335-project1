@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Square Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Square extends TwoDimensionalShape {
     /**
      * the length of all four sides
@@ -22,7 +22,7 @@ public class Square extends TwoDimensionalShape {
     /**
      * Square Constructor
      *
-     * @param side:double the length of all four sides
+     * @param length the length of all four sides
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Square(double length) {
@@ -53,7 +53,7 @@ public class Square extends TwoDimensionalShape {
     /**
      * Static Method calculate the area of any square
      *
-     * @param side:double the length of all four sides
+     * @param length the length of all four sides
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public static double calculateArea(double length) {
@@ -69,7 +69,7 @@ public class Square extends TwoDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Square Object
      */
     public static Square fromUserInput(Scanner input) {

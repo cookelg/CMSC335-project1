@@ -1,3 +1,8 @@
+package com.cooke.shapes;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * Triangle Class and TriangleType enum class
  *
@@ -10,11 +15,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Triangle extends TwoDimensionalShape {
     /**
      * the length of side 1
@@ -36,9 +36,9 @@ public class Triangle extends TwoDimensionalShape {
     /**
      * Triangle Constructor
      *
-     * @param side1:double the length of the first side
-     * @param side2:double the length of the second side
-     * @param side3:double the length of the third side
+     * @param side1 the length of the first side
+     * @param side2 the length of the second side
+     * @param side3 the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
      *                                  less than or equal to 0.
@@ -141,9 +141,9 @@ public class Triangle extends TwoDimensionalShape {
     /**
      * Static Method calculate the area of any triangle
      *
-     * @param side1:double the length of the first side
-     * @param side2:double the length of the second side
-     * @param side3:double the length of the third side
+     * @param side1 the length of the first side
+     * @param side2 the length of the second side
+     * @param side3 the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
      *                                  less than or equal to 0.
@@ -180,7 +180,7 @@ public class Triangle extends TwoDimensionalShape {
      * errors,
      * and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Triangle Object
      */
     public static Triangle fromUserInput(Scanner input) {
@@ -193,9 +193,9 @@ public class Triangle extends TwoDimensionalShape {
     /**
      * Static Method to determine a triangle type with three known side lengths
      *
-     * @param side1:double the length of the first side
-     * @param side2:double the length of the second side
-     * @param side3:double the length of the third side
+     * @param side1 the length of the first side
+     * @param side2 the length of the second side
+     * @param side3 the length of the third side
      * @throws IllegalArgumentException Either if the lengths provided to not form
      *                                  a proper triangle, or if any arguments are
      *                                  less than or equal to 0.

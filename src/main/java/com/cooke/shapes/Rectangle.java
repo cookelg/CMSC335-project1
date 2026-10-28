@@ -1,3 +1,7 @@
+package com.cooke.shapes;
+
+import java.util.Scanner;
+
 /**
  * Rectangle Class 
  *
@@ -9,10 +13,6 @@
  *
  * @author Lawrence Cooke
  */
-package com.cooke.shapes;
-
-import java.util.Scanner;
-
 public class Rectangle extends TwoDimensionalShape {
     /**
      * the length of two parallel sides of the rectangle
@@ -26,9 +26,9 @@ public class Rectangle extends TwoDimensionalShape {
     /**
      * Rectangle Constructor
      *
-     * @param length:double the length of two parallel sides of the rectangle
-     * @param width:double  the length of the remaining two parallel sides of the
-     *                      rectangle
+     * @param length the length of two parallel sides of the rectangle
+     * @param width  the length of the remaining two parallel sides of the
+     *               rectangle
      * @throws IllegalArgumentException if the argument is less than or equal to 0.
      */
     public Rectangle(double length, double width) {
@@ -81,9 +81,9 @@ public class Rectangle extends TwoDimensionalShape {
     /**
      * Static Method calculate the area of any rectangle
      *
-     * @param length:double the length of two parallel sides of the rectangle
-     * @param width:double  the length of the remaining two parallel sides of the
-     *                      rectangle
+     * @param length the length of two parallel sides of the rectangle
+     * @param width  the length of the remaining two parallel sides of the
+     *               rectangle
      * @throws IllegalArgumentException if any argument is less than or equal to 0.
      */
     public static double calculateArea(double length, double width) {
@@ -99,7 +99,7 @@ public class Rectangle extends TwoDimensionalShape {
      * This method will prompt the user for inputs, check the users inputs for
      * errors, and re-prompt until a valid input is parsed.
      *
-     * @param input:java.utils.Scanner The input scanner object
+     * @param input The input scanner object
      * @return a new Rectangle Object
      */
     public static Rectangle fromUserInput(Scanner input) {
